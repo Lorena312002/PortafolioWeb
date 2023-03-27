@@ -1,0 +1,239 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;600;900&display=swap');
+/*variables de css */
+
+:root{
+--font-title :  'Poppins', sans-serif;
+
+--font-texts : 'Poppins', sans-serif;
+--size-titles : 40px;
+--size-texts : 18px;
+--color-green: #636363;
+
+}
+.dark-mode {
+  
+    background: #7d69cc;
+    color: #fdfdfd;
+    box-shadow:  rgba(0, 0, 0, .2);
+  }
+body{
+    background: #F6F6F6;
+    overflow-x: hidden;
+}
+
+body::-webkit-scrollbar{
+    width: 12px;
+    background-color:#D9D9D9;
+
+}
+
+body::-webkit-scrollbar-thumb{
+    background:#F827CA;
+    border-radius: 10px;
+    
+}
+
+body::-webkit-scrollbar:hover{
+    background-color: #b9b8b8;
+}
+
+.bg-portafolio{
+    background: #F6F6F6;
+    font-family: var(--font-title);
+    display: flex;
+    }
+    
+    nav ul li{
+        margin: 0 15px;
+    }
+    
+    nav ul li a{
+        color: var(--color-green)!important;
+    }
+
+.btn-portafolio{
+    width: 180px;
+    color: #FFFCFC;
+    font-size: 15px;
+    padding: 12px 0;
+    background: #F827CA;
+    border: 0;
+    border-radius: 20px;
+    outline: none;
+    margin-top: 30px;
+    margin-left: 350px;
+    margin-top: 50px;
+}
+
+nav ul li.experiencia a{
+
+    display: block;
+   padding-left: 30px !important;
+   padding-right: 30px !important;
+   color:#636363 ;
+   background: #F827CA;
+   border-radius: 20px;
+
+
+}
+
+nav ul li a:hover {
+    background-color: #F411B5;
+    border-radius: 25px;
+  }
+
+  main {
+    display: flex;
+    place-content: center;
+    place-items: center;
+    height: 90vh;
+    width: 100%;
+    background: url("../img/mancha.png")  ;}
+
+  .card{
+
+    background-color: transparent;
+    border: none;
+
+
+}
+  
+#darkMode-icon{
+    font-size: 2.4rem;
+    color: #000;
+    cursor: pointer;
+  }
+  
+h1{
+    text-align: center;
+    margin-top: 110px;
+   
+   
+}
+
+
+.slick-slide img{
+    margin: 0 auto;
+    max-width: 120px;
+    border: 3px solid #F827CA;
+    border-radius: 50%;
+    margin-bottom: 50px;
+}
+
+.item{
+    padding: 15px;
+    outline: none;
+}
+
+.item.inner{
+    background: linear-gradient(45deg, #636363,#F411B5);
+    border-radius: 18px;
+    text-align: center;
+    padding: 25px;
+
+}
+
+.item.inner h4{
+    font-size: 30px;
+    color: #636363;
+    text-transform: capitalize;
+
+}
+
+.item.inner p{
+    font-size: 16px;
+    color: #fff;
+    text-transform: capitalize;
+    letter-spacing: 1px;
+}
+/*background color*/
+.item1 .item.inner{
+    background: linear-gradient(45deg, #636363,#F6F6F6);
+}
+
+.item2 .item.inner{
+    background: linear-gradient(45deg, #00BAE2,#fff);
+}
+
+.item3 .item.inner{
+    background: linear-gradient(45deg, #b90a0a,#0eb1c7);
+}
+
+.item4 .item.inner{
+    background: linear-gradient(45deg, #1d9e53,#fff);
+}
+
+.item2 .item.inner{
+    background: linear-gradient(45deg, #636363,#7c047c);
+}
+/*SLIDER CONTROL*/
+.slick-slide{
+   transform: scale(0.8);
+   opacity: 0.3;
+   transition: all ease 0.5s;
+}
+
+.slick-slide.slick-current{
+    transform: scale(1);
+    opacity: 1;
+}
+
+.slick-arrow{
+    width: 40px;
+    height: 40px;
+    font-size: 1px;
+    color: transparent;
+    z-index: 1;
+    border: none;
+    opacity: 0.8;
+}
+.slick-prev{
+    position: absolute;
+    bottom: 0px;
+    left: 45%;
+    background: url('../img/circulo-de-flecha.png');
+    background-size: 100%;
+    transform: rotate(-180deg);
+    transition: 0.3s ease-in-out;
+}
+.slick-next{
+    position: absolute;
+    bottom: 0px;
+    right: 45%;
+    background: url('../img/circulo-de-flecha.png');
+    background-size: 100%;
+    transition: 0.3s ease-in-out;
+}
+.slick-prev:hover{
+    transform: scale(1.2) rotate(-180deg);
+    opacity:1;
+    filter: drop-shadow(0 2px 3px var(--color-especial));
+
+}
+.slick-next:hover{
+    transform: scale(1.2) ;
+    opacity:1;
+    filter: drop-shadow(0 2px 3px var(--color-especial));
+
+}
+
+.slick-list{
+    padding-top: 55px !important;
+    padding-bottom: 55px !important;
+}
+
+#darkMode-icon{
+    font-size: 2.4rem;
+    color: #000;
+    cursor: pointer;
+  }
+
+  .modo-oscuro{
+    background-color:#7d69cc;
+
+  }
+
+  .modo-oscuro h1 {
+    color: #ffffff;
+  }

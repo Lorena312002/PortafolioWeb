@@ -1,0 +1,33 @@
+
+.modo-oscuro{
+    background-color:#7d69cc;
+
+  }
+  
+  .modo-oscuro h1{
+    color: #ffffff;
+  }
+  
+  .modo-oscuro form input, form textarea{
+    width: 100%;
+    border: 0;
+    outline: none;
+    background: #ffffff;
+    padding: 15px;
+    margin: 15px 0;
+    color: #7d69cc;
+    font-size: 18px;
+    border-radius: 6px;
+
+  }
+  
+  
+  .modo-oscuro  .social-icon a{
+  
+    text-decoration: none;
+    font-size: 30px;
+    margin-right: 15px;
+    color: #ffffff;
+    display: inline-block;
+    transition: transform 0.5s;
+      }
